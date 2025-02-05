@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>calculator </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<input type="text" name="value" id="inp" disabled>
+<div class="btn">
+	<input type="button" value="7" onclick="inp.value+='7'">
+	<input type="button" value="8" onclick="inp.value+='8'">
+	<input type="button" value="9" onclick="inp.value+='9'">
+	<input type="button" value="/" onclick="inp.value+='/'">
+</div>
+<div class="btn">
+	<input type="button" value="4" onclick="inp.value+='4'">
+	<input type="button" value="5" onclick="inp.value+='5'">
+	<input type="button" value="6" onclick="inp.value+='6'">
+	<input type="button" value="*" onclick="inp.value+='*'">
+</div>
+<div class="btn">
+	<input type="button" value="1" onclick="inp.value+='1'">
+	<input type="button" value="2" onclick="inp.value+='2'">
+	<input type="button" value="3" onclick="inp.value+='3'">
+	<input type="button" value="-" onclick="inp.value+='-'">
+</div>
+<div class="btn">
+	<input type="button" value="0" onclick="inp.value+='0'">
+	<input type="button" value="C" onclick="inp.value=''">
+	<input type="button" value="=" onclick="inp.value=eval(inp.value)">
+	<input type="button" value="+" onclick="inp.value+='+'">
+</div>
+<div class="btn">
+	<input type="button" value="DEL" onclick="inp.value=inp.value.toString().slice(0,-1)">
+	<input type="button" value="." onclick="inp.value='.'">
+	<input type="button" value="00" onclick="inp.value+='00'">
+	<input type="button" value="%" onclick="inp.value+='%'">
+</div>
+</div>
+</body>
+</html>
